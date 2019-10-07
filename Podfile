@@ -7,8 +7,12 @@ target 'snapfan.emily' do
 
   # Pods for snapfan.emily
 pod 'SDWebImage','4.3.3'
-pod 'Firebase/Core','6.3.0'
-pod 'Firebase/Auth','6.1.2'
+pod 'FirebaseCore','6.3.0'
+pod 'FirebaseAuth','6.1.2'
+pod 'FirebaseStorage','3.4.1'
+
+pod 'Firebase/Core'
+
 
   
 

@@ -135,6 +135,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="next:" destination="k0C-wk-kBG" eventType="touchUpInside" id="7Nc-9m-IiX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -142,12 +145,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Create snap!" id="o0m-TX-Tvi">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="organize" id="H3h-9g-v8f"/>
-                            <barButtonItem systemItem="camera" id="QP2-pB-zDD"/>
+                            <barButtonItem systemItem="organize" id="H3h-9g-v8f">
+                                <connections>
+                                    <action selector="albumTab:" destination="k0C-wk-kBG" id="Nme-No-PsV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="QP2-pB-zDD">
+                                <connections>
+                                    <action selector="cameraTab:" destination="k0C-wk-kBG" id="Xg5-fv-NJk"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
-                        <segue destination="uFf-nF-cpI" kind="show" id="yGo-Hv-s5B"/>
+                        <outlet property="image" destination="lJi-uF-2jt" id="2ZB-hJ-Y7g"/>
+                        <outlet property="noteText" destination="egy-P4-49A" id="ydg-33-Uxk"/>
+                        <segue destination="uFf-nF-cpI" kind="show" identifier="moveToSend" id="yGo-Hv-s5B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSj-RF-3OH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
