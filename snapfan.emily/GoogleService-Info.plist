@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>225256559359-1ld6elmvstsj3q5hqvf1v9sv7pev56sm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.225256559359-1ld6elmvstsj3q5hqvf1v9sv7pev56sm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD4pLQ5jKgFSIL1vb855c7Ls2dDO_9vI5I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>225256559359</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>emily.com.snapfan-emily</string>
+	<key>PROJECT_ID</key>
+	<string>snapfaneemmiillyy</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snapfaneemmiillyy.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:225256559359:ios:a85d86e9ad8f332e8672ca</string>
+	<key>DATABASE_URL</key>
+	<string>https://snapfaneemmiillyy.firebaseio.com</string>
+</dict>
+</plist>

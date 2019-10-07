@@ -1,0 +1,6 @@
+framework module Pods_snapfan_emily {
+  umbrella header "Pods-snapfan.emily-umbrella.h"
+
+  export *
+  module * { export * }
+}
