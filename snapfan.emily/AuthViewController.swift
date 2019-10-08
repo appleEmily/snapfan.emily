@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class AuthViewController: UIViewController {
     
@@ -34,7 +35,7 @@ class AuthViewController: UIViewController {
                         if error == nil {
                             print("User signed in")
                             
-                           //何かの中？でやるときは、self.をつける。多分自分の中だからかな。
+                            //何かの中？でやるときは、self.をつける。多分自分の中だからかな。
                             self.performSegue(withIdentifier: "authsuccess", sender: nil)
                         } else {
                             //print(error)
@@ -44,7 +45,12 @@ class AuthViewController: UIViewController {
                     Auth.auth().createUser(withEmail: email, password: password) { (result, error)
                         in
                         if error == nil {
-                            print("User created")
+                            if let uid = result?.user.uid {
+                                
+                                Database.database().reference().child("users").child(uid).child("email").setValue(email)
+                                self.performSegue(withIdentifier: "authsuccess", sender: nil)
+                            }
+                            
                         } else {
                             //print(error)
                         }
@@ -65,17 +71,5 @@ class AuthViewController: UIViewController {
             bottomButton.setTitle("switch to sign up", for: .normal)
         }
     }
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

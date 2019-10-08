@@ -31,6 +31,10 @@ PODS:
     - GoogleUtilities/Environment (~> 6.2)
     - GoogleUtilities/Logger (~> 6.2)
   - FirebaseCoreDiagnosticsInterop (1.0.0)
+  - FirebaseDatabase (6.1.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (4.2.5):
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
@@ -68,6 +72,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.3.1):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.2)
+  - leveldb-library (1.22)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -81,6 +86,7 @@ DEPENDENCIES:
   - Firebase/Core
   - FirebaseAuth (= 6.1.2)
   - FirebaseCore (= 6.3.0)
+  - FirebaseDatabase
   - FirebaseStorage (= 3.4.1)
   - SDWebImage (= 4.3.3)
 
@@ -93,6 +99,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
     - GoogleAppMeasurement
@@ -100,6 +107,7 @@ SPEC REPOS:
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
     - GTMSessionFetcher
+    - leveldb-library
     - nanopb
     - SDWebImage
 
@@ -111,6 +119,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 8b2765c445d40db7137989b7146a3aa3f91b5529
   FirebaseCoreDiagnostics: be4f7a09d02ab305f18de59a470412caddb64c2a
   FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
+  FirebaseDatabase: 518cd94286de2ee999e19383a2a6ae04c81ce993
   FirebaseInstanceID: 550df9be1f99f751d8fcde3ac342a1e21a0e6c42
   FirebaseStorage: b7c6d00997bc21d4465453bdcc5cc65513110fed
   GoogleAppMeasurement: 0ae90be1cc4dad40f4a27fc767ef59fa032ec87b
@@ -118,9 +127,10 @@ SPEC CHECKSUMS:
   GoogleDataTransportCCTSupport: 9f352523e8785a71f6754f51eeff09f49ec19268
   GoogleUtilities: f895fde57977df4e0233edda0dbeac490e3703b6
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: 153f2601092990046afab7f5a873e397077c9fef
+PODFILE CHECKSUM: e89165ce5d545e6bd6c8f01a0c8f50f0939b0356
 
 COCOAPODS: 1.8.3

@@ -10,6 +10,7 @@ pod 'SDWebImage','4.3.3'
 pod 'FirebaseCore','6.3.0'
 pod 'FirebaseAuth','6.1.2'
 pod 'FirebaseStorage','3.4.1'
+pod 'FirebaseDatabase','6.1.0'
 
 pod 'Firebase/Core'
 

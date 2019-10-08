@@ -18,6 +18,7 @@
 		A151132B234B92EE002F9BE9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151132A234B92EE002F9BE9 /* AuthViewController.swift */; };
 		A151132D234BA654002F9BE9 /* snapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151132C234BA654002F9BE9 /* snapsTableViewController.swift */; };
 		A151132F234BA932002F9BE9 /* createSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A151132E234BA931002F9BE9 /* createSnapViewController.swift */; };
+		A1BF8E6E234CED9E00C4E909 /* selectUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BF8E6D234CED9E00C4E909 /* selectUserTableViewController.swift */; };
 		E03DFF3173B8FECB861F0850 /* Pods_snapfan_emily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB54DC5705746A8A0C9F13E0 /* Pods_snapfan_emily.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A151132A234B92EE002F9BE9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		A151132C234BA654002F9BE9 /* snapsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapsTableViewController.swift; sourceTree = "<group>"; };
 		A151132E234BA931002F9BE9 /* createSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createSnapViewController.swift; sourceTree = "<group>"; };
+		A1BF8E6D234CED9E00C4E909 /* selectUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectUserTableViewController.swift; sourceTree = "<group>"; };
 		AB54DC5705746A8A0C9F13E0 /* Pods_snapfan_emily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapfan_emily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				A1511303234B82CE002F9BE9 /* LaunchScreen.storyboard */,
 				A1511306234B82CE002F9BE9 /* Info.plist */,
 				A1511328234B8969002F9BE9 /* GoogleService-Info.plist */,
+				A1BF8E6D234CED9E00C4E909 /* selectUserTableViewController.swift */,
 			);
 			path = snapfan.emily;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BF8E6E234CED9E00C4E909 /* selectUserTableViewController.swift in Sources */,
 				A151132F234BA932002F9BE9 /* createSnapViewController.swift in Sources */,
 				A15112F9234B82CA002F9BE9 /* AppDelegate.swift in Sources */,
 				A151132D234BA654002F9BE9 /* snapsTableViewController.swift in Sources */,

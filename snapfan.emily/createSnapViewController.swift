@@ -77,6 +77,18 @@ class createSnapViewController: UIViewController, UIImagePickerControllerDelegat
         override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
         }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let selectVC = segue.destination as?
+            selectUserTableViewController {
+            selectVC.imageName = imageName
+            selectVC.imageURL = imageURL
+            if let message = noteText.text {
+                selectVC.message = message
+                
+            }
+        
+        }
+    }
         
         
     }
