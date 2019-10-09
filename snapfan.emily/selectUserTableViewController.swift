@@ -34,9 +34,9 @@ class selectUserTableViewController: UITableViewController {
         }
         
     }
-    
-    // MARK: - Table view data source
-
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -47,7 +47,8 @@ class selectUserTableViewController: UITableViewController {
         
         let cell = UITableViewCell()
         let user = users[indexPath.row]
-        cell.textLabel?.text = user.email
+        cell.textLabel!.text = user.email
+        print(cell)
         
         return cell
     }
